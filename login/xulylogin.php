@@ -7,10 +7,10 @@
 		$_SESSION['User'] == 'admin' &&
 		$_POST['txtPass'] == '111111'
 	  ){
-	 //  	if( isset($_POST['chkRemember']) &&
-	 //  		$_POST['chkRemember'] == 'yes'){
-		// 		setcookie('RememberMe', $_POST['txtUser'], time()+160);
-		// }
+	   	if( isset($_POST['chkRemember']) &&
+	   		$_POST['chkRemember'] == 'yes'){
+		 		setcookie('RememberMe', $_POST['txtUser'], time()+160);
+		 }
 	  	header('Location: home.php');
 	}
 
